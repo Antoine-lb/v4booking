@@ -1,0 +1,49 @@
+{
+  "name": "v-4-testing",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Strapi application",
+  "license": "MIT",
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "scripts": {
+    "build": "strapi build",
+    "deploy": "strapi deploy",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi",
+    "test": "jest --forceExit --detectOpenHandles"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      ".tmp",
+      ".cache"
+    ]
+  },
+  "dependencies": {
+    "@strapi/plugin-cloud": "4.25.8",
+    "@strapi/plugin-i18n": "4.25.8",
+    "@strapi/plugin-users-permissions": "4.25.8",
+    "@strapi/strapi": "4.25.8",
+    "better-sqlite3": "8.6.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "5.3.4",
+    "styled-components": "5.3.3"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "sqlite3": "^5.1.7",
+    "supertest": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "uuid": "f1ab35e1-6504-458f-bcc1-37ea2f0d457d"
+  }
+}
